@@ -36,6 +36,8 @@ colnames(testy)<-"activity"
 trainset<-cbind(trains,trainy,trainx)
 testset<-cbind(tests,testy,testx)
 whole<-rbind(trainset,testset)
+
+##not necessary, but it shows the difference after validate the column names
 names(whole)
 
 library(dplyr)
